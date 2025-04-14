@@ -1,0 +1,82 @@
+<html >
+<head>
+ 
+  <title>Structura Pagina</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      height: 100vh;
+    }
+
+    header {
+      background: #2196F3;
+      color: white;
+      text-align: center;
+      padding: 10px;
+ 
+    }
+
+    .main-wrapper {
+      padding: 10px;
+    }
+
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      padding: 200px;
+      border: 2px dashed red;
+    }
+
+    .left {
+      background: #F28B82;
+      padding: 150px;
+    }
+
+    .right {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .right-top,
+    .right-bottom {
+      background: #80CBC4;
+      padding: 10px;
+    }
+
+    footer {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header><img src="img1.jpg" width="350" height=200"></header>
+   
+    <div class="main-wrapper">
+      <div class="main-content">
+        <div class="left"></div>
+        <div class="right">
+          <div class="right-top"></div>
+          <div class="right-bottom"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+
+
+</footer>
+  </div>
+</body>
+</html>
